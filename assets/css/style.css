@@ -1,148 +1,340 @@
 @font-face {
-    font-family: Jeko;
-    src: url(../fonts/FontsFree-Net-Jeko-Semi-Bold.ttf);
+  font-family: Jeko;
+  src: url(../fonts/FontsFree-Net-Jeko-Semi-Bold.ttf);
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
 html {
-    height: 100vh;
+  height: 100vh;
 }
 
 body {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .root {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    display: grid;
+  display: grid;
 }
 
 .root header {
-    min-width: 100vw;
-    background-color: black;
+  min-width: 100vw;
+  background-color: black;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 header h1.header-title {
-    font-family: Jeko;
-    font-size: 500%;
-    color: white;
-    text-align: center;
+  font-family: Jeko;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
 
-    animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
 header h1.header-title:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 header p.header-description {
-    font-family: Jeko;
-    font-size: 140%;
-    color: white;
-    text-align: center;
+  font-family: Jeko;
+  font-size: 28px;
+  color: white;
+  text-align: center;
 }
 
 .root main {
-    padding: 5%;
+  padding: 10px;
 
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 main .mastered-technologies-section {
-    padding-top: 2%;
-    padding-bottom: 2%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .mastered-technologies-section p.mastered-technologies-section-text {
-    font-family: Arial;
-    font-size: 140%;
-    text-align: center;
+  font-family: Arial;
+  font-size: 21px;
+  text-align: center;
 }
 
 .mastered-technologies-section .mastered-technologies {
-    padding: 2% 6%;
+  padding: 5px 10px;
 }
 
 .mastered-technologies .mastered-technology {
-    border: 1px solid lightgray;
-    border-radius: 7px;
-    background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  background-color: white;
 
-    display: grid;
-    grid-template-columns: 20% 80%;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-content: center;
+  align-items: center;
 
-    padding: 3%;
+  padding: 5px;
 }
 
 .mastered-technologies .mastered-technology img.mastered-technology-icon {
-    width: 80%;
-    height: 80%;
+  max-width: 100%;
+  max-height: 100%;
+
+  width: 80%;
+  height: 80%;
 }
 
 .mastered-technologies .mastered-technology img.mastered-technology-icon:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-.mastered-technologies .mastered-technology div.mastered-technology-description {
-    display: block;
+.mastered-technologies
+  .mastered-technology
+  div.mastered-technology-description {
+  display: block;
 
-    padding-left: 2%;
-    padding-right: 2%;
+  padding-right: 5px;
 }
 
-.mastered-technologies .mastered-technology div.mastered-technology-description h3.mastered-technology-name {
-    font-family: Jeko;
-    font-size: 120%;
-    margin-bottom: 1%;
+.mastered-technologies
+  .mastered-technology
+  div.mastered-technology-description
+  h3.mastered-technology-name {
+  font-family: Jeko;
+  font-size: 21px;
+  margin-bottom: 3px;
 }
 
-.mastered-technologies .mastered-technology div.mastered-technology-description p.mastered-technology-text {
-    font-family: Arial;
-    font-size: 100%;
+.mastered-technologies
+  .mastered-technology
+  div.mastered-technology-description
+  p.mastered-technology-text {
+  font-family: Arial;
+  font-size: 14px;
 }
 
 footer {
-    background: black;
-    padding: 1%;
+  background: black;
+  padding: 5px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 footer .social-media-links {
-    width: 100%;
+  width: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .social-media-links .social-media-link {
-    margin: 0 1%;
+  margin: 0 7px;
+}
+
+@media screen and (max-width: 770px) {
+  header h1.header-title {
+    font-size: 75px;
+  }
+
+  header p.header-description {
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header h1.header-title {
+    font-size: 70px;
+  }
+
+  header p.header-description {
+    font-size: 26px;
+  }
+
+  .root main {
+    padding: 9px;
+  }
+
+  main .mastered-technologies-section {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .mastered-technologies-section p.mastered-technologies-section-text {
+    font-size: 20px;
+  }
+
+  .mastered-technologies-section .mastered-technologies {
+    padding: 4px 9px;
+  }
+
+  .mastered-technologies
+    .mastered-technology
+    div.mastered-technology-description {
+    padding-right: 4px;
+  }
+
+  .mastered-technologies
+    .mastered-technology
+    div.mastered-technology-description
+    h3.mastered-technology-name {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+
+  .mastered-technologies
+    .mastered-technology
+    div.mastered-technology-description
+    p.mastered-technology-text {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  header h1.header-title {
+    font-size: 65px;
+  }
+
+  header p.header-description {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  header h1.header-title {
+    font-size: 60px;
+  }
+
+  header p.header-description {
+    font-size: 24px;
+  }
+
+  .mastered-technologies-section p.mastered-technologies-section-text {
+    font-size: 19px;
+  }
+
+  .mastered-technologies
+    .mastered-technology
+    div.mastered-technology-description
+    h3.mastered-technology-name {
+    font-size: 19px;
+  }
+
+  .mastered-technologies
+    .mastered-technology
+    div.mastered-technology-description
+    p.mastered-technology-text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  header h1.header-title {
+    font-size: 55px;
+  }
+
+  header p.header-description {
+    font-size: 23px;
+  }
+
+  .root main {
+    padding: 8px;
+  }
+
+  main .mastered-technologies-section {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .mastered-technologies-section .mastered-technologies {
+    padding: 3px 8px;
+  }
+
+  .mastered-technologies
+    .mastered-technology
+    div.mastered-technology-description {
+    padding-right: 3px;
+  }
+
+  .mastered-technologies
+    .mastered-technology
+    div.mastered-technology-description
+    h3.mastered-technology-name {
+    margin-bottom: 1px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  header h1.header-title {
+    font-size: 60px;
+  }
+
+  header p.header-description {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header h1.header-title {
+    font-size: 55px;
+  }
+
+  header p.header-description {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  header h1.header-title {
+    font-size: 50px;
+  }
+
+  header p.header-description {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 210px) {
+  header h1.header-title {
+    font-size: 45px;
+  }
+
+  header p.header-description {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 140px) {
+  header h1.header-title {
+    font-size: 40px;
+  }
+
+  header p.header-description {
+    font-size: 20px;
+  }
 }
